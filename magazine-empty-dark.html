@@ -25,7 +25,7 @@
     <script type="text/javascript" id="bi_medien_auftraggeber_widget_config">
       const bi_medien_auftraggeber_widget_config = {
         title: "Aktuelle Ausschreibungen der Stadt Wedel",
-        theme: "dark",
+        theme: "light",
         authority_ids: ["186bad23-862e-45b0-a21f-b73c7c5a5efa"],
       };
     </script>
@@ -52,8 +52,27 @@
         <div id="content">
           <div
             id="bi-medien-widget-box"
-            style="display: flex; flex-direction: column; padding: 3rem"
+            style="
+              display: flex;
+              flex-direction: column;
+              padding: 3rem;
+              min-height: 560px;
+            "
           >
+            <script
+              type="text/javascript"
+              id="bi_medien_auftraggeber_widget_config"
+            >
+              const bi_medien_auftraggeber_widget_config = {
+                title: "",
+                theme: "dark",
+                authority_ids: [],
+              };
+            </script>
+            <script
+              type="text/javascript"
+              src="https://storage.googleapis.com/aktuelle-ausschreibungen.bi-medien.de/js/bi-medien-auftraggeber-widget.min.js"
+            ></script>
             <a
               id="bi-medien-auftraggeber-widget-backlink"
               href="https://bi-medien.de/ausschreibungsdienste"
